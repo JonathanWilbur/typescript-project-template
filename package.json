@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "directories": {
+    "bin": "dist",
+    "lib": "lib",
+    "doc": "documentation",
+    "example": "documentation/example",
+    "test": "test",
+    "man": "documentation/man"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist; mkdir -p dist",
+    "test": "jest"
+  },
+  "author": "Jonathan M. Wilbur <jonathan@wilbur.space>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "jest": "^24.8.0",
+    "serverless": "^1.50.0",
+    "typescript": "^3.5.3"
+  }
+}

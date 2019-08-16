@@ -1,0 +1,13 @@
+test/*          linguist-vendored=true
+documentation/* linguist-documentation=true
+dist/*          linguist-generated=true
+
+# Text files
+*               text=auto
+*.vcproj	    text eol=crlf
+*.sh		    text eol=lf
+Makefile        text eol=lf
+
+# Binary files
+*.jpg		    -text
+*.pdf           -text
