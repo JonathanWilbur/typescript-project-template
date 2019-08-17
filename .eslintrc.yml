@@ -4,13 +4,26 @@ env:
   node: true
 extends:
   - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:@typescript-eslint/eslint-recommended'
+  # This causes an error. See: https://github.com/typescript-eslint/typescript-eslint/issues/864
+  # - 'plugin:@typescript-eslint/recommended-requiring-type-checking'
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
+overrides:
+  - files: "*.test.js"
+    rules:
+      no-undef:
+        - off
+      no-magic-numbers:
+        - off
 parser: '@typescript-eslint/parser'
-# parserOptions:
-#   ecmaVersion: 2018
-#   sourceType: module
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+  # project:
+  #   - './tsconfig.json'
 plugins:
   - '@typescript-eslint'
 rules:
@@ -156,6 +169,7 @@ rules:
     - before
   padded-blocks:
     - error
+    - never
   semi-style:
     - error
     - last
@@ -196,3 +210,33 @@ rules:
     - never
   yield-star-spacing:
     - error
+  eol-last:
+    - error
+  brace-style:
+    - error
+    - 1tbs
+  comma-dangle:
+    - error
+    - always
+  func-call-spacing:
+    - error
+    - never
+  # Off because there is a legitimate use case for displaying small array
+  # elements all on one line, but wrapping lines at the max-len column.
+  array-element-newline:
+    - off
+  array-bracket-newline:
+    - off
+  key-spacing:
+    - error
+    - beforeColon: false
+      afterColon: true
+      mode: minimum
+  line-comment-position:
+    - off
+  # I need to determine my opinion on this one.
+  # '@typescript-eslint/array-type':
+  #   - error
+  # This one causes an error.
+  # '@typescript-eslint/await-thenable':
+  #   - error
