@@ -20,7 +20,7 @@ stages:
 
   - stage: Lint
     displayName: Lint source
-    dependsOn: Setup
+    # dependsOn: Setup
     jobs:
       - job: eslint
         steps:
