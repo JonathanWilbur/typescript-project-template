@@ -29,7 +29,7 @@ stages:
       - template: .azure-pipelines/test.yml
         parameters:
           nodeVersion: $(nodeVersion)
-          vmImage: 'ubuntu-18.04'
+          vmImage: 'ubuntu-16.04'
       # - job: pushToMasterBranch
       #   displayName: Push to the Master branch on the Git Repository
       #   dependsOn: Test
