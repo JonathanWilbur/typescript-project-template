@@ -19,9 +19,9 @@
 - [x] Lint task
 - [x] ~~WebAssembly build~~ (Still not really graceful.)
 - [ ] Azure Pipelines
-  - [ ] Use Script tasks
+  - [x] Use Script tasks
   - [ ] Configure NPM Publishing
   - [ ] Configure Docker Publishing
-  - [ ] Configure Notifications
-  - [ ] Configure Version Number Checking
-  - [ ] Publish Test Result
+  - [x] ~~Configure Notifications~~ (It already emails you.)
+  - [x] ~~Configure Version Number Checking~~ (Already taken care of by NPM.)
+  - [x] ~~Publish Test Result~~ (Azure does not support Jest tests yet.)
