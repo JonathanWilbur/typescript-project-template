@@ -1,3 +1,6 @@
+variables:
+  nodeVersion: '12.x'
+
 trigger:
   branches:
     include:
@@ -8,42 +11,25 @@ stages:
   - stage: Development
     displayName: Development
     jobs:
-      - job: Install
-        displayName: Install Dependencies
-        steps:
-          - task: NodeTool@0
-            inputs:
-              versionSpec: '12.x'
-            displayName: 'Install Node.js'
-          - task: Npm@1
-            inputs:
-              command: install
       - job: Lint
         displayName: Lint Source
-        dependsOn: Install
         steps:
+          - task: NodeTool@0
+            displayName: 'Install NodeJS'
+            inputs:
+              versionSpec: $(nodeVersion)
+          - task: Npm@1
+            displayName: 'Install NodeJS Dependencies'
+            inputs:
+              command: install
           - task: CmdLine@2
+            displayName: 'Run ESLint'
             inputs:
               script: 'npx eslint --config .eslintrc.yml ./source/*.ts'
-      - job: Build
-        displayName: Build
-        dependsOn: Install
-        steps:
-          - task: CmdLine@2
-            inputs:
-              script: 'npx tsc'
-          - task: CmdLine@2
-            inputs:
-              script: 'npx webpack'
-      - job: Test
-        displayName: Test
-        dependsOn: Build
-        steps:
-          - task: CmdLine@2
-            inputs:
-              script: 'npx jest'
-          # - task: checkVersionNumberIncrement
-          #   displayName: Check that the Version Number was Incremented
+      - template: .azure-templates/test.yml
+        parameters:
+          nodeVersion: $(nodeVersion)
+          vmImage: 'ubuntu-18.04'
       # - job: pushToMasterBranch
       #   displayName: Push to the Master branch on the Git Repository
       #   dependsOn: Test

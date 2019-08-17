@@ -1,0 +1,32 @@
+parameters:
+  nodeVersion: '12.x'
+  vmImage: 'ubuntu-18.04'
+
+jobs:
+  - job: Test on ${{ parameters.vmImage }} / NodeJS ${{ parameters.nodeVersion }}
+    displayName: Build and Test
+    pool:
+      vmImage: ${{ parameters.vmImage }}
+    steps:
+      - task: NodeTool@0
+        displayName: 'Install NodeJS'
+        inputs:
+          versionSpec: ${{ parameters.nodeVersion }}
+      - task: Npm@1
+        displayName: 'Install NodeJS Dependencies'
+        inputs:
+          command: install
+      - task: CmdLine@2
+        displayName: 'Transpile TypeScript'
+        inputs:
+          script: 'npx tsc'
+      - task: CmdLine@2
+        displayName: 'Run Webpack'
+        inputs:
+          script: 'npx webpack'
+      - task: CmdLine@2
+        displayName: 'Run Jest Tests'
+        inputs:
+          script: 'npx jest'
+      # - task: checkVersionNumberIncrement
+      #   displayName: Check that the Version Number was Incremented
