@@ -50,38 +50,38 @@ stages:
         steps:
           - script: 'npx jest'
 
-  - stage: Deploy
-    displayName: Deploy
-    dependsOn: Test
-    jobs: []
-      # - job: pushToMasterBranch
-      #   displayName: Push to the Master branch on the Git Repository
-      #   steps:
-      #     - task: GitHubRelease@0
-      #       gitHubConnection: ''
-      #       repository: ''
-      #       action: create
-      #       # TODO: Review options. There are a lot more:
-      #       # https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops
-      # - job: publishNPMPackage
-      #   displayName: Publish NPM Package
-      #   steps:
-      #     - task: Npm@1
-      #       inputs:
-      #         command: publish
-      #         publishRegistry: useFeed
-      #         publishFeed: feedName
-      # - job: deployDockerImage
-      #   displayName: Deploy Docker Image
-      #   steps:
-      #     - task: Docker@2
-      #       displayName: Build and push an image to container registry
-      #       inputs:
-      #         command: buildAndPush
-      #         repository: $(imageRepository)
-      #         dockerfile: $(dockerfilePath)
-      #         containerRegistry: $(dockerRegistryServiceConnection)
-      #         tags: $(tag)
+  # - stage: Deploy
+  #   displayName: Deploy
+  #   dependsOn: Test
+  #   jobs:
+  #     - job: pushToMasterBranch
+  #       displayName: Push to the Master branch on the Git Repository
+  #       steps:
+  #         - task: GitHubRelease@0
+  #           gitHubConnection: ''
+  #           repository: ''
+  #           action: create
+  #           # TODO: Review options. There are a lot more:
+  #           # https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops
+  #     - job: publishNPMPackage
+  #       displayName: Publish NPM Package
+  #       steps:
+  #         - task: Npm@1
+  #           inputs:
+  #             command: publish
+  #             publishRegistry: useFeed
+  #             publishFeed: feedName
+  #     - job: deployDockerImage
+  #       displayName: Deploy Docker Image
+  #       steps:
+  #         - task: Docker@2
+  #           displayName: Build and push an image to container registry
+  #           inputs:
+  #             command: buildAndPush
+  #             repository: $(imageRepository)
+  #             dockerfile: $(dockerfilePath)
+  #             containerRegistry: $(dockerRegistryServiceConnection)
+  #             tags: $(tag)
 
   # - stage: Notify
   #   displayName: Notify
