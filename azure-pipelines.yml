@@ -5,10 +5,24 @@ trigger:
 
 stages:
 
-  - stage: Setup
-    displayName: Prepare ingredients
+  # - stage: Setup
+  #   displayName: Prepare ingredients
+  #   jobs:
+  #     - job: installNodeJSAndPackages
+  #       steps:
+  #         - task: NodeTool@0
+  #           inputs:
+  #             versionSpec: '12.x'
+  #           displayName: 'Install Node.js'
+  #         - task: Npm@1
+  #           inputs:
+  #             command: install
+
+  - stage: Lint
+    displayName: Lint source
+    dependsOn: Setup
     jobs:
-      - job: installNodeJSAndPackages
+      - job: eslint
         steps:
           - task: NodeTool@0
             inputs:
@@ -17,13 +31,6 @@ stages:
           - task: Npm@1
             inputs:
               command: install
-
-  - stage: Lint
-    displayName: Lint source
-    dependsOn: Setup
-    jobs:
-      - job: eslint
-        steps:
           - script: 'npx eslint --config .eslintrc.yml ./source/*.ts'
 
   - stage: Build

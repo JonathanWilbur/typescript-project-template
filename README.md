@@ -24,3 +24,4 @@
   - [ ] Configure Docker Publishing
   - [ ] Configure Notifications
   - [ ] Configure Version Number Checking
+  - [ ] Publish Test Result
