@@ -3,8 +3,8 @@ parameters:
   vmImage: 'ubuntu-18.04'
 
 jobs:
-  - job: Test on ${{ parameters.vmImage }} / NodeJS ${{ parameters.nodeVersion }}
-    displayName: Build and Test
+  - job: Test
+    displayName: Build and Test on ${{ parameters.vmImage }} / NodeJS ${{ parameters.nodeVersion }}
     pool:
       vmImage: ${{ parameters.vmImage }}
     steps:
