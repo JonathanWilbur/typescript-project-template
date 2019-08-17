@@ -26,7 +26,7 @@ stages:
             displayName: 'Run ESLint'
             inputs:
               script: 'npx eslint --config .eslintrc.yml ./source/*.ts'
-      - template: .azure-templates/test.yml
+      - template: .azure-pipelines/test.yml
         parameters:
           nodeVersion: $(nodeVersion)
           vmImage: 'ubuntu-18.04'
