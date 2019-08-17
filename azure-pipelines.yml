@@ -7,7 +7,6 @@ stages:
 
   - stage: Development
     displayName: Build and push stage
-    dependsOn: Lint
     jobs:
       - job: Install
         displayName: Install Dependencies
@@ -46,6 +45,7 @@ stages:
           #   displayName: Check that the Version Number was Incremented
       # - job: pushToMasterBranch
       #   displayName: Push to the Master branch on the Git Repository
+      #   dependsOn: Test
       #   steps:
       #     - task: GitHubRelease@0
       #       inputs:
@@ -56,6 +56,7 @@ stages:
       #         # https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops
       # - job: publishNPMPackage
       #   displayName: Publish NPM Package
+      #   dependsOn: Test
       #   steps:
       #     - task: Npm@1
       #       inputs:
@@ -64,6 +65,7 @@ stages:
       #         publishFeed: ''
       # - job: deployDockerImage
       #   displayName: Deploy Docker Image
+      #   dependsOn: Test
       #   steps:
       #     - task: Docker@2
       #       displayName: Build and push an image to container registry
