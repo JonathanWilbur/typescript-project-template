@@ -1,2 +1,3 @@
 all : ./source/index.ts
-	./node_modules/.bin/tsc
+	npx tsc
+	npx webpack

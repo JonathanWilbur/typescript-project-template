@@ -12,6 +12,10 @@ globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
 overrides:
+  - files: "*.js"
+    rules:
+      '@typescript-eslint/no-var-requires':
+        - off
   - files: "*.test.js"
     rules:
       no-undef:

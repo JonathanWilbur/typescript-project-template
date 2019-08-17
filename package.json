@@ -1,26 +1,15 @@
 {
-  "name": "",
-  "version": "0.1.0",
+  "bugs": {
+    "email": "jonathan@wilbur.space"
+  },
+  "contributors": [
+    {
+      "email": "jonathan@wilbur.space",
+      "name": "Jonathan M. Wilbur",
+      "url": "https://github.com/JonathanWilbur"
+    }
+  ],
   "description": "",
-  "main": "./dist/index.js",
-  "directories": {
-    "bin": "dist",
-    "lib": "lib",
-    "doc": "documentation",
-    "example": "documentation/example",
-    "test": "test",
-    "man": "documentation/man"
-  },
-  "scripts": {
-    "build": "npx tsc",
-    "clean": "rm -rf dist; mkdir -p dist",
-    "deploy-functions": "npx sls deploy",
-    "lint": "npx eslint --config .eslintrc.yml ./source/*.ts",
-    "remove-functions": "npx sls remove",
-    "test": "npx jest"
-  },
-  "author": "Jonathan M. Wilbur <jonathan@wilbur.space>",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -31,6 +20,30 @@
     "eslint": "^6.1.0",
     "jest": "^24.8.0",
     "serverless": "^1.50.0",
-    "typescript": "^3.5.3"
-  }
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "directories": {
+    "doc": "documentation",
+    "test": "test"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "name": "",
+  "scripts": {
+    "build": "npx tsc && npx webpack",
+    "clean": "rm -rf dist; mkdir -p dist",
+    "deploy-functions": "npx sls deploy",
+    "lint": "npx eslint --config .eslintrc.yml ./source/*.ts",
+    "remove-functions": "npx sls remove",
+    "test": "npx jest"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "0.1.0"
 }

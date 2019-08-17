@@ -14,6 +14,9 @@ Subsystem: if known, please specify the affected core module name
 
 If possible, please provide code that demonstrates the problem, keeping it as
 simple and free of external dependencies as you can.
+
+If--and only if--this is a security vulnerability, you may email me directly at
+jonathan@wilbur.space, rather than publishing the details of the vulnerability.
 -->
 
 * **Version**:
