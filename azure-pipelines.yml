@@ -6,7 +6,7 @@ trigger:
 stages:
 
   - stage: Development
-    displayName: Build and push stage
+    displayName: Development
     jobs:
       - job: Install
         displayName: Install Dependencies
@@ -20,6 +20,7 @@ stages:
               command: install
       - job: Lint
         displayName: Lint Source
+        dependsOn: Install
         steps:
           - task: CmdLine@2
             inputs:
