@@ -12,9 +12,12 @@
     "man": "documentation/man"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "clean": "rm -rf dist; mkdir -p dist",
-    "test": "jest"
+    "deploy-functions": "npx sls deploy",
+    "lint": "npx eslint --config .eslintrc.yml ./source/*.ts",
+    "remove-functions": "npx sls remove",
+    "test": "npx jest"
   },
   "author": "Jonathan M. Wilbur <jonathan@wilbur.space>",
   "license": "MIT",

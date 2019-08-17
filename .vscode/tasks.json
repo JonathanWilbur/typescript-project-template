@@ -14,6 +14,26 @@
             "problemMatcher": []
         },
         {
+            "type": "npm",
+            "script": "build",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "clean",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "deploy-functions",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "remove-functions",
+            "problemMatcher": []
+        },
+        {
             "type": "typescript",
             "tsconfig": "tsconfig.json",
             "problemMatcher": [
@@ -43,11 +63,40 @@
         {
             "label": "Lint",
             "type": "shell",
-            "command": "npx jest",
+            "command": "npx eslint",
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
+            },
+            "problemMatcher": [
+                "$eslint-compact"
+            ]
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "npx tsc",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        },
+        {
+            "label": "Test",
+            "type": "shell",
+            "command": "npx jest --no-color",
+            "problemMatcher": {
+                "pattern": [
+                    {
+                        "regexp": "^FAIL (.*\\.test\\.js)",
+                        "location": 1,
+                        "file": 1
+                    },
+                    {
+                        "regexp": "  × (.*) \\(.*\\)",
+                        "message": 1
+                    }
+                ]
             }
-        }
+        },
     ]
 }

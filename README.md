@@ -23,3 +23,5 @@
 - [ ] VCbuild?
 - [ ] Allow email only for security vulnerabilities.
 - [ ] Lint task
+- [ ] WebAssembly build
+- [ ] Jenkins X

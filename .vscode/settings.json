@@ -10,6 +10,6 @@
         "typescript",
         "typescriptreact"
     ],
-    "eslint.nodePath": "./node_modules"
-
+    "eslint.nodePath": "./node_modules",
+    "jest.showCoverageOnLoad": true
 }
