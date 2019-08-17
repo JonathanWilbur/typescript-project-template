@@ -25,3 +25,4 @@
   - [x] ~~Configure Notifications~~ (It already emails you.)
   - [x] ~~Configure Version Number Checking~~ (Already taken care of by NPM.)
   - [x] ~~Publish Test Result~~ (Azure does not support Jest tests yet.)
+  - [ ] Publish Pipeline Artifact?
