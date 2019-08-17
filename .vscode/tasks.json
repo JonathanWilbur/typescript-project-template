@@ -39,6 +39,15 @@
                 "reveal": "never",
                 "panel": "shared"
             }
+        },
+        {
+            "label": "Lint",
+            "type": "shell",
+            "command": "npx jest",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
         }
     ]
 }

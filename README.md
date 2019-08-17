@@ -15,12 +15,10 @@
 - [ ] TravisCI?
 - [ ] CircleCI?
 - [x] VS Code
-  - [x] `launch.json`
-  - [x] `tasks.json`
 - [ ] Visual Studio Project
 - [ ] ESLint Configuration
 - [ ] NPM `package.json`
-- [ ] Makefile
+- [x] Makefile
 - [ ] Build scripts?
 - [ ] VCbuild?
 - [ ] Allow email only for security vulnerabilities.
