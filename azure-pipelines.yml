@@ -4,7 +4,7 @@ variables:
 trigger:
   branches:
     include:
-      - dev
+      - master
 
 stages:
 
@@ -28,37 +28,6 @@ stages:
               script: 'npx eslint --config .eslintrc.yml ./source/*.ts'
       - template: .azure-pipelines/test.yml
         parameters:
+          name: 'test-node-ubuntu-16.04-x64'
           nodeVersion: $(nodeVersion)
           vmImage: 'ubuntu-16.04'
-      # - job: pushToMasterBranch
-      #   displayName: Push to the Master branch on the Git Repository
-      #   dependsOn: Test
-      #   steps:
-      #     - task: GitHubRelease@0
-      #       inputs:
-      #         gitHubConnection: ''
-      #         repositoryName: ''
-      #         action: create
-      #         # TODO: Review options. There are a lot more:
-      #         # https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops
-      # - job: publishNPMPackage
-      #   displayName: Publish NPM Package
-      #   dependsOn: Test
-      #   steps:
-      #     - task: Npm@1
-      #       inputs:
-      #         command: publish
-      #         publishRegistry: useFeed
-      #         publishFeed: ''
-      # - job: deployDockerImage
-      #   displayName: Deploy Docker Image
-      #   dependsOn: Test
-      #   steps:
-      #     - task: Docker@2
-      #       displayName: Build and push an image to container registry
-      #       inputs:
-      #         command: buildAndPush
-      #         repository: $(imageRepository)
-      #         dockerfile: $(dockerfilePath)
-      #         containerRegistry: $(dockerRegistryServiceConnection)
-      #         tags: $(tag)

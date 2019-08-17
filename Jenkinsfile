@@ -26,6 +26,7 @@ pipeline {
                 sh 'npm run-script lint'
                 sh 'npm run-script test'
             }
+            junit 'junit.xml'
         }
         stage('Deploy') {
             steps {

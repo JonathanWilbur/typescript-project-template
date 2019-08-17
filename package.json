@@ -16,9 +16,10 @@
     "@babel/preset-typescript": "^7.3.3",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
-    "babel-jest": "^24.8.0",
+    "babel-jest": "^24.9.0",
     "eslint": "^6.1.0",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
+    "jest-junit": "^7.0.0",
     "serverless": "^1.50.0",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
@@ -42,8 +43,11 @@
     "deploy-functions": "npx sls deploy",
     "lint": "npx eslint --config .eslintrc.yml ./source/*.ts",
     "remove-functions": "npx sls remove",
-    "test": "npx jest"
+    "test": "npx jest --ci --reporters=default --reporters=jest-junit"
   },
   "types": "./dist/index.d.ts",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "dependencies": {
+    "jest-junit": "^7.0.0"
+  }
 }

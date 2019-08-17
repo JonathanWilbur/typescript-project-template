@@ -18,11 +18,6 @@
 - [x] Allow email only for security vulnerabilities.
 - [x] Lint task
 - [x] ~~WebAssembly build~~ (Still not really graceful.)
-- [ ] Azure Pipelines
-  - [x] Use Script tasks
-  - [ ] Configure NPM Publishing
-  - [ ] Configure Docker Publishing
-  - [x] ~~Configure Notifications~~ (It already emails you.)
-  - [x] ~~Configure Version Number Checking~~ (Already taken care of by NPM.)
-  - [x] ~~Publish Test Result~~ (Azure does not support Jest tests yet.)
-  - [ ] Publish Pipeline Artifact?
+- [x] Azure Pipelines
+- [ ] Docker-based testing?
+- [x] Add JUnit tests

@@ -1,6 +1,7 @@
 test/*          linguist-vendored=true
 documentation/* linguist-documentation=true
 dist/*          linguist-generated=true
+*.js            linguist-detectable=false
 
 # Text files
 *               text=crlf
