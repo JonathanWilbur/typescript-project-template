@@ -1,4 +1,4 @@
-test/*          linguist-vendored=true
+test/*          linguist-vendored
 documentation/* linguist-documentation=true
 dist/*          linguist-generated=true
 *.js            linguist-detectable=false
