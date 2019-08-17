@@ -9,12 +9,18 @@
 
 - [x] GitHub Issue Template
 - [x] Jenkinsfile
+- [ ] Jenkins Artifacts
 - [x] ~~Webpack configuration~~ ()
 - [x] VS Code
-- [ ] Visual Studio Project
 - [x] ESLint Configuration
 - [x] NPM `package.json`
 - [x] Makefile
 - [x] Allow email only for security vulnerabilities.
 - [x] Lint task
 - [x] ~~WebAssembly build~~ (Still not really graceful.)
+- [ ] Azure Pipelines
+  - [ ] Use Script tasks
+  - [ ] Configure NPM Publishing
+  - [ ] Configure Docker Publishing
+  - [ ] Configure Notifications
+  - [ ] Configure Version Number Checking

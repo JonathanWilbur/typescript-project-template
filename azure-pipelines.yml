@@ -1,0 +1,88 @@
+trigger:
+  branches:
+    include:
+      - master
+
+stages:
+
+  - stage: Setup
+    displayName: Prepare ingredients
+    jobs:
+      - job: installNodeJSAndPackages
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '12.x'
+            displayName: 'Install Node.js'
+          - task: Npm@1
+            command: install
+
+  - stage: Lint
+    displayName: Lint source
+    dependsOn: Setup
+    jobs:
+      - job: eslint
+        steps:
+          - script: 'npx eslint --config .eslintrc.yml ./source/*.ts'
+
+  - stage: Build
+    displayName: Build and push stage
+    dependsOn: Lint
+    jobs:  
+      - job: Build
+        displayName: Build job
+        pool:
+          vmImage: $(vmImageName)
+        steps:
+          - script: 'npx tsc'
+          - script: 'npx webpack'
+
+  - stage: Test
+    displayName: Test
+    dependsOn: Build
+    jobs:
+      # - job: checkVersionNumberIncrement
+      #   displayName: Check that the Version Number was Incremented
+      #   steps: []
+      - job: jestTests
+        displayName: Run Jest Tests
+        steps:
+          - script: 'npx jest'
+
+  - stage: Deploy
+    displayName: Deploy
+    dependsOn: Test
+    jobs: []
+      # - job: pushToMasterBranch
+      #   displayName: Push to the Master branch on the Git Repository
+      #   steps:
+      #     - task: GitHubRelease@0
+      #       gitHubConnection: ''
+      #       repository: ''
+      #       action: create
+      #       # TODO: Review options. There are a lot more:
+      #       # https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops
+      # - job: publishNPMPackage
+      #   displayName: Publish NPM Package
+      #   steps:
+      #     - task: Npm@1
+      #       inputs:
+      #         command: publish
+      #         publishRegistry: useFeed
+      #         publishFeed: feedName
+      # - job: deployDockerImage
+      #   displayName: Deploy Docker Image
+      #   steps:
+      #     - task: Docker@2
+      #       displayName: Build and push an image to container registry
+      #       inputs:
+      #         command: buildAndPush
+      #         repository: $(imageRepository)
+      #         dockerfile: $(dockerfilePath)
+      #         containerRegistry: $(dockerRegistryServiceConnection)
+      #         tags: $(tag)
+
+  # - stage: Notify
+  #   displayName: Notify
+  #   dependsOn: Deploy
+  #   jobs: []
