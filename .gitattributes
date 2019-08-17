@@ -3,7 +3,7 @@ documentation/* linguist-documentation=true
 dist/*          linguist-generated=true
 
 # Text files
-*               text=auto
+*               text=crlf
 *.vcproj	    text eol=crlf
 *.sh		    text eol=lf
 Makefile        text eol=lf
