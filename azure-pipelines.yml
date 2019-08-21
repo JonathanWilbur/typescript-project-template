@@ -25,7 +25,7 @@ stages:
           - task: CmdLine@2
             displayName: 'Run ESLint'
             inputs:
-              script: 'npx eslint --config .eslintrc.yml ./source/*.ts'
+              script: 'npx eslint --config .eslintrc.yml ./source/**/*.ts'
       - template: .azure-pipelines/test.yml
         parameters:
           name: 'test_node_12_ubuntu_16_x64'

@@ -41,7 +41,7 @@
     "build": "npx tsc && npx webpack",
     "clean": "rm -rf dist; mkdir -p dist",
     "deploy-functions": "npx sls deploy",
-    "lint": "npx eslint --config .eslintrc.yml ./source/*.ts",
+    "lint": "npx eslint --config .eslintrc.yml ./source/**/*.ts || true",
     "remove-functions": "npx sls remove",
     "test": "npx jest --ci --reporters=default --reporters=jest-junit"
   },

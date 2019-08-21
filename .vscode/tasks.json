@@ -63,7 +63,7 @@
         {
             "label": "Lint",
             "type": "shell",
-            "command": "npx eslint",
+            "command": "npx eslint --config .eslintrc.yml ./source/**/*.ts",
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
