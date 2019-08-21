@@ -40,9 +40,9 @@ rules:
   quotes:
     - error
     - double
+  # This is turned off because it does not work.
   semi:
-    - error
-    - always
+    - off
   max-len:
     - warn
     - 120
@@ -51,7 +51,7 @@ rules:
   array-callback-return:
     - warn
   curly:
-    - error
+    - off
   default-case:
     - error
   no-template-curly-in-string:
@@ -166,6 +166,7 @@ rules:
     - error
   object-curly-spacing:
     - error
+    - always
   object-property-newline:
     - error
   operator-linebreak:
@@ -244,3 +245,5 @@ rules:
   # This one causes an error.
   # '@typescript-eslint/await-thenable':
   #   - error
+  '@typescript-eslint/camelcase':
+    - off
