@@ -208,8 +208,10 @@ rules:
     - error
   no-duplicate-imports:
     - error
+  # This rule does not check for readonly parameters in Typescript, where
+  # empty constructors still have a use.
   no-useless-constructor:
-    - error
+    - off
   template-curly-spacing:
     - error
     - never
