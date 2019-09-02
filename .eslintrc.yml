@@ -168,7 +168,7 @@ rules:
     - error
     - always
   object-property-newline:
-    - error
+    - warn
   operator-linebreak:
     - error
     - before
@@ -224,7 +224,7 @@ rules:
     - 1tbs
   comma-dangle:
     - error
-    - always
+    - always-multiline
   func-call-spacing:
     - error
     - never
