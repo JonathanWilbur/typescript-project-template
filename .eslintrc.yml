@@ -249,3 +249,5 @@ rules:
   #   - error
   '@typescript-eslint/camelcase':
     - off
+  '@typescript-eslint/no-inferrable-types':
+    - off
