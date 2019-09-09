@@ -2,14 +2,14 @@
     "eslint.run": "onSave",
     "eslint.enable": true,
     "eslint.workingDirectories": [
-        "source"
+        "source",
     ],
     "eslint.validate": [
         "javascript",
         "javascriptreact",
         "typescript",
-        "typescriptreact"
+        "typescriptreact",
     ],
     "eslint.nodePath": "./node_modules",
-    "jest.showCoverageOnLoad": true
+    "jest.showCoverageOnLoad": true,
 }

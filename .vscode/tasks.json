@@ -6,46 +6,46 @@
         {
             "type": "npm",
             "script": "install",
-            "problemMatcher": []
+            "problemMatcher": [],
         },
         {
             "type": "npm",
             "script": "test",
-            "problemMatcher": []
+            "problemMatcher": [],
         },
         {
             "type": "npm",
             "script": "build",
-            "problemMatcher": []
+            "problemMatcher": [],
         },
         {
             "type": "npm",
             "script": "clean",
-            "problemMatcher": []
+            "problemMatcher": [],
         },
         {
             "type": "npm",
             "script": "deploy-functions",
-            "problemMatcher": []
+            "problemMatcher": [],
         },
         {
             "type": "npm",
             "script": "remove-functions",
-            "problemMatcher": []
+            "problemMatcher": [],
         },
         {
             "type": "typescript",
             "tsconfig": "tsconfig.json",
             "problemMatcher": [
-                "$tsc"
-            ]
+                "$tsc",
+            ],
         },
         {
             "type": "typescript",
             "tsconfig": "tsconfig.json",
             "option": "watch",
             "problemMatcher": [
-                "$tsc-watch"
+                "$tsc-watch",
             ]
         },
         {
@@ -53,11 +53,11 @@
             "type": "shell",
             "command": "rm -rf ./dist && mkdir -p ./dist",
             "windows": {
-                "command": "rmdir /Q /S ./dist && mkdir ./dist"
+                "command": "rmdir /Q /S ./dist && mkdir ./dist",
             },
             "presentation": {
                 "reveal": "never",
-                "panel": "shared"
+                "panel": "shared",
             }
         },
         {
@@ -66,19 +66,19 @@
             "command": "npx eslint --config .eslintrc.yml ./source/**/*.ts",
             "presentation": {
                 "reveal": "always",
-                "panel": "shared"
+                "panel": "shared",
             },
             "problemMatcher": [
-                "$eslint-compact"
-            ]
+                "$eslint-compact",
+            ],
         },
         {
             "label": "Build",
             "type": "shell",
             "command": "npx tsc",
             "problemMatcher": [
-                "$tsc"
-            ]
+                "$tsc",
+            ],
         },
         {
             "label": "Test",
@@ -89,14 +89,14 @@
                     {
                         "regexp": "^FAIL (.*\\.test\\.js)",
                         "location": 1,
-                        "file": 1
+                        "file": 1,
                     },
                     {
                         "regexp": "  × (.*) \\(.*\\)",
-                        "message": 1
-                    }
-                ]
-            }
+                        "message": 1,
+                    },
+                ],
+            },
         },
-    ]
+    ],
 }

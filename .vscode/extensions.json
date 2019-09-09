@@ -13,8 +13,9 @@
 		"eg2.vscode-npm-script",
 		"ms-azuretools.vscode-docker",
 		"timvaneker.serverless-snippets",
-		"ms-azure-devops.azure-pipelines"
+		"ms-azure-devops.azure-pipelines",
+		"shardulm94.trailing-spaces",
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
-	"unwantedRecommendations": []
+	"unwantedRecommendations": [],
 }

@@ -2,13 +2,13 @@ pipeline {
     agent any
     // agent {
     //     docker {
-    //         image 'node' 
+    //         image 'node'
     //     }
     // }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: ''  
+                git branch: 'master', url: ''
             }
         }
         stage('Install') {
