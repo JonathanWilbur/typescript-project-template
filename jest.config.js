@@ -12,7 +12,7 @@ module.exports = {
     // browser: false,
 
     // The directory where Jest should store its cached dependency information
-    // cacheDirectory: "C:\\Users\\Jonathan\\AppData\\Local\\Temp\\jest",
+    // cacheDirectory: "",
 
     // Automatically clear mock calls and instances between every test
     clearMocks: true,
@@ -139,10 +139,9 @@ module.exports = {
     // testLocationInResults: false,
 
     // The glob patterns Jest uses to detect test files
-    // testMatch: [
-    //   "**/__tests__/**/*.[jt]s?(x)",
-    //   "**/?(*.)+(spec|test).[tj]s?(x)"
-    // ],
+    testMatch: [
+        "**/?(*.)+(test).[tj]s?(x)",
+    ],
 
     // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
     // testPathIgnorePatterns: [
