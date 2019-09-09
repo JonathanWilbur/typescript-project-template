@@ -1,5 +1,19 @@
 test/jail/
 rubbish/
+junit.xml
+
+# Private keys, wallets, and other sensitive items.
+*.pem
+*.der
+*.key
+*.privkey
+*.privatekey
+*.seckey
+*.secretkey
+*.private
+*.secret
+wallet.dat
+default_wallet
 
 # Sourced from https://github.com/github/gitignore
 
@@ -84,6 +98,8 @@ Temporary Items
 .directory
 .Trash-*
 .nfs*
+*.rpm
+*.deb
 
 # Ignore PDFs so I don't infringe on intellectual property
 *.pdf
