@@ -15,3 +15,9 @@ Be sure to correct information in:
 - `webpack.config.js`
 - `Jenkinsfile`
 - `.mailmap`
+
+## Known Issues
+
+- Running `npm run lint` only works on Posix hosts, because the single quotes
+  get escaped on Windows. If you have the ESLint plugin installed and
+  configured, you should still be able to get live linting on Windows.
