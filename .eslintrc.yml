@@ -128,8 +128,10 @@ rules:
     - error
   radix:
     - error
+  # Turned off because sometimes an interface requires a callback that returns
+  # a `Promise`, even though nothing in the callback `await`s.
   require-await:
-    - warn
+    - off
   require-unicode-regexp:
     - warn
   no-label-var:
@@ -206,6 +208,7 @@ rules:
     - error
   no-confusing-arrow:
     - error
+    - allowParens: true
   no-duplicate-imports:
     - error
   # This rule does not check for readonly parameters in Typescript, where
@@ -241,6 +244,8 @@ rules:
       mode: minimum
   line-comment-position:
     - off
+  no-parameter-properties:
+    - off
   # I need to determine my opinion on this one.
   # '@typescript-eslint/array-type':
   #   - error
@@ -250,4 +255,8 @@ rules:
   '@typescript-eslint/camelcase':
     - off
   '@typescript-eslint/no-inferrable-types':
+    - off
+  # Empirically, this rule has been more of a nuisance than it is worth. I
+  # often deal with free-form JSON, which makes this a nightmare.
+  '@typescript-eslint/no-explicit-any':
     - off
