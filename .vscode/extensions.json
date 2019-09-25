@@ -13,7 +13,6 @@
 		"eg2.vscode-npm-script",
 		"ms-azuretools.vscode-docker",
 		"timvaneker.serverless-snippets",
-		"ms-azure-devops.azure-pipelines",
         "shardulm94.trailing-spaces",
         "editorconfig.editorconfig",
 	],
