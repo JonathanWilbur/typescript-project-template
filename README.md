@@ -11,7 +11,7 @@ Be sure to correct information in:
 - `serverless.yml`
 - `webpack.config.js`
 - `Jenkinsfile` (Specifically, the `url` for the Git repository.)
-- `.mailmap`
+- `./test/testpage.html`
 
 ## Known Issues
 
