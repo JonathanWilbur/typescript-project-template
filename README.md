@@ -1,6 +1,6 @@
 # __PROJECT_TITLE__
 
-* Author: [Jonathan M. Wilbur](https://jonathan.wilbur.space) <[jonathan@wilbur.space](mailto:jonathan@wilbur.space)>
+* Author: [Jonathan M. Wilbur](https://github.com/JonathanWilbur) <[jonathan@wilbur.space](mailto:jonathan@wilbur.space)>
 * Copyright Year: 2019
 * License: [MIT License](https://mit-license.org/)
 
