@@ -12,6 +12,8 @@ Be sure to correct information in:
 - `webpack.config.js`
 - `Jenkinsfile` (Specifically, the `url` for the Git repository.)
 - `./test/testpage.html`
+- `Dockerfile`
+- `docker-compose.yaml`
 
 ## Known Issues
 

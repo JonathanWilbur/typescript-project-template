@@ -12,7 +12,8 @@ services:
   #   container_name: ''
   #   depends_on: []
   #   environment: []
-  #   hostname: 'imaphost'
+  #   hostname: ''
+  #   image: ''
   #   networks: []
   #   ports: []
   #   volumes: []
