@@ -12,4 +12,9 @@
     ],
     "eslint.nodePath": "./node_modules",
     "jest.showCoverageOnLoad": true,
+    "azureFunctions.deploySubpath": "./source/functions",
+    "azureFunctions.projectLanguage": "TypeScript",
+    "azureFunctions.projectRuntime": "~2",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "npm prune",
 }
