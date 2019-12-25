@@ -15,6 +15,7 @@
 		"timvaneker.serverless-snippets",
         "shardulm94.trailing-spaces",
         "editorconfig.editorconfig",
+        "ms-vscode-remote.vscode-remote-extensionpack",
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [],
