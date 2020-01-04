@@ -20,6 +20,8 @@ Be sure to correct information in:
 - [ ] Complexity Reporting
   - I like [this package](https://www.npmjs.com/package/grunt-complexity) for
     this, but I am not keen on installing Grunt just for this.
+- [ ] Profiling
+- [x] Benchmarking
 
 ## Known Issues
 

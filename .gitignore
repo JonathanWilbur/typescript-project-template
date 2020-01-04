@@ -334,3 +334,6 @@ secring.*
 
 # Vagrant Ignores
 .vagrant/
+
+# Benchmarking Data
+benchmark.csv
