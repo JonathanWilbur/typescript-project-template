@@ -15,6 +15,12 @@ Be sure to correct information in:
 - `Dockerfile`
 - `docker-compose.yaml`
 
+## To Do
+
+- [ ] Complexity Reporting
+  - I like [this package](https://www.npmjs.com/package/grunt-complexity) for
+    this, but I am not keen on installing Grunt just for this.
+
 ## Known Issues
 
 - Running `npm run lint` only works on Posix hosts, because the single quotes
