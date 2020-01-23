@@ -135,8 +135,10 @@ rules:
   # a `Promise`, even though nothing in the callback `await`s.
   require-await:
     - off
+  # Turned off because using the Unicode flag makes certain parts of regexp not
+  # work as I would expect them to work.
   require-unicode-regexp:
-    - warn
+    - off
   no-label-var:
     - warn
   no-shadow:
