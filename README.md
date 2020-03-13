@@ -22,6 +22,7 @@ Be sure to correct information in:
     this, but I am not keen on installing Grunt just for this.
 - [ ] Profiling
 - [x] Benchmarking
+- [ ] Commit Sign-Off
 
 ## Known Issues
 
