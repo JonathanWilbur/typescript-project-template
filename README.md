@@ -24,6 +24,27 @@ Be sure to correct information in:
 - [x] Benchmarking
 - [ ] Commit Sign-Off
 
+## Check out these GitHub Actions
+
+They may be useful, depending on what this becomes.
+
+- https://github.com/marketplace/actions/shellcheck
+- https://github.com/marketplace/actions/dipshit-kubeval
+- https://github.com/marketplace/actions/xml-lint
+- https://github.com/marketplace/actions/docker-lint
+- https://github.com/marketplace/actions/single-node-kubernetes-cluster
+- https://github.com/marketplace/actions/yaml-lint
+- https://github.com/marketplace/actions/run-jest
+- https://github.com/marketplace/actions/fixme-alert
+- https://github.com/marketplace/actions/readable-readme
+- https://github.com/marketplace/actions/alcide-advisor-kubernetes-scan
+- https://github.com/marketplace/actions/secret-scan
+- https://github.com/marketplace/actions/404-links
+- https://github.com/marketplace/actions/validate-json
+- https://github.com/marketplace/actions/todo-to-issue
+- https://github.com/marketplace/actions/todo-actions
+- https://github.com/marketplace/actions/send-email
+
 ## Known Issues
 
 - Running `npm run lint` only works on Posix hosts, because the single quotes
