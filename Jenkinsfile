@@ -28,8 +28,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'npm run-script lint'
-                sh 'npm run-script test'
+                sh 'npm run lint'
+                sh 'npm run test'
                 junit 'junit.xml'
             }
         }
