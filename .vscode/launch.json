@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Default",
-            "program": "${workspaceFolder}/dist/index.js",
+            "program": "${workspaceFolder}/dist/node/index.js",
             "args": [],
             "outFiles": [
                 "${workspaceFolder}/**/*.js",
