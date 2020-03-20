@@ -4,13 +4,13 @@ on: [push]
 
 jobs:
   # This only works on public repositories.
-  check-urls:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check URLs
-        uses: paramt/url-checker@master
-        with:
-          files: "README.md,SUPPORT.md"
+  # check-urls:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Check URLs
+  #       uses: paramt/url-checker@master
+  #       with:
+  #         files: "README.md,SUPPORT.md"
   # generate-uuid:
   #   runs-on: ubuntu-latest
   #   name: Create UUID
