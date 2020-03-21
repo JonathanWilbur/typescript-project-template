@@ -42,7 +42,7 @@ They may be useful, depending on what this becomes.
 - [ ] https://github.com/marketplace/actions/run-jest
 - [ ] https://github.com/marketplace/actions/readable-readme
 - [ ] https://github.com/marketplace/actions/alcide-advisor-kubernetes-scan
-- [x] https://github.com/marketplace/actions/secret-scan
+- [ ] https://github.com/marketplace/actions/secret-scan
 - [x] https://github.com/marketplace/actions/404-links
 - [ ] https://github.com/marketplace/actions/validate-json
 - [ ] https://github.com/marketplace/actions/send-email
