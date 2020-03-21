@@ -23,8 +23,8 @@ Be sure to correct information in:
 - [ ] Profiling
 - [x] Benchmarking
 - [ ] Commit Sign-Off
-- [ ] GitHub actions to prevent secret commits
-- [ ] Only install production dependencies in container and in Jenkins jobs
+- [x] ~~GitHub actions to prevent secret commits~~ None adequate.
+- [x] Only install production dependencies in container and in Jenkins jobs
 - [ ] Add `.npmignore`
 - [ ] Update `.funcignore`
 - [ ] Update `.eslintignore`
@@ -33,25 +33,25 @@ Be sure to correct information in:
 
 They may be useful, depending on what this becomes.
 
-- [x] https://github.com/marketplace/actions/shellcheck
-- [ ] https://github.com/marketplace/actions/dipshit-kubeval
-- [ ] https://github.com/marketplace/actions/xml-lint
-- [x] https://github.com/marketplace/actions/docker-lint
-- [ ] https://github.com/marketplace/actions/single-node-kubernetes-cluster
-- [x] https://github.com/marketplace/actions/yaml-lint
-- [ ] https://github.com/marketplace/actions/run-jest
-- [ ] https://github.com/marketplace/actions/readable-readme
-- [ ] https://github.com/marketplace/actions/alcide-advisor-kubernetes-scan
-- [ ] https://github.com/marketplace/actions/secret-scan
-- [x] https://github.com/marketplace/actions/404-links
-- [ ] https://github.com/marketplace/actions/validate-json
-- [ ] https://github.com/marketplace/actions/send-email
-- [ ] https://github.com/apps/dco (This provides Commit Sign-Off)
-- [ ] https://github.com/marketplace/create-issue-branch
-- [ ] https://github.com/marketplace/auto-branch
-- [ ] https://github.com/marketplace/auto-add-label
-- [ ] https://github.com/marketplace/semantic-pr-title
-- [ ] https://github.com/marketplace/js-bundle-analyzer
+- https://github.com/marketplace/actions/shellcheck
+- https://github.com/marketplace/actions/dipshit-kubeval
+- https://github.com/marketplace/actions/xml-lint
+- https://github.com/marketplace/actions/docker-lint
+- https://github.com/marketplace/actions/single-node-kubernetes-cluster
+- https://github.com/marketplace/actions/yaml-lint
+- https://github.com/marketplace/actions/run-jest
+- https://github.com/marketplace/actions/readable-readme
+- https://github.com/marketplace/actions/alcide-advisor-kubernetes-scan
+- https://github.com/marketplace/actions/secret-scan
+- https://github.com/marketplace/actions/404-links
+- https://github.com/marketplace/actions/validate-json
+- https://github.com/marketplace/actions/send-email
+- https://github.com/apps/dco (This provides Commit Sign-Off)
+- https://github.com/marketplace/create-issue-branch
+- https://github.com/marketplace/auto-branch
+- https://github.com/marketplace/auto-add-label
+- https://github.com/marketplace/semantic-pr-title
+- https://github.com/marketplace/js-bundle-analyzer
 
 ## Known Issues
 
