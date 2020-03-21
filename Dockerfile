@@ -2,8 +2,8 @@
 # or `npm run build`. Build this file using `docker build -f prod.dockerfile .`.
 #
 FROM node:alpine
-LABEL author "Jonathan M. Wilbur <jonathan@wilbur.space>"
-LABEL environment "production"
+LABEL author="Jonathan M. Wilbur <jonathan@wilbur.space>"
+LABEL environment="production"
 COPY ./dist/node /srv
 WORKDIR /srv
 ENV NODE_ENV production

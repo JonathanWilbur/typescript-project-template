@@ -1,4 +1,4 @@
-name: Node CI
+name: Repo Quality
 
 on: [push]
 
@@ -6,15 +6,15 @@ jobs:
   check-urls:
     runs-on: ubuntu-latest
     steps:
-      - name: Check URLs
-        uses: paramt/url-checker@master
-        with:
-          files: "README.md"
-  shellcheck:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check Shell Scripts
-        uses: ludeeus/actions/shellcheck@master
+    - name: Check URLs
+      uses: paramt/url-checker@master
+      with:
+        files: "README.md"
+  # shellcheck:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Check Shell Scripts
+  #     uses: ludeeus/actions/shellcheck@master
   lint-dockerfile:
     runs-on: ubuntu-latest
     steps:
@@ -36,9 +36,3 @@ jobs:
     steps:
     - name: Scan for Secrets
       uses: max/secret-scan@master
-  check-links:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: 'restqa-404-links'
-      uses: restqa/404-links@1.0.0
