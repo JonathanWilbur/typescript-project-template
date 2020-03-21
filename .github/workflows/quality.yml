@@ -3,26 +3,13 @@ name: Repo Quality
 on: [push]
 
 jobs:
-  check-urls:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Check URLs
-      uses: paramt/url-checker@master
-      with:
-        files: "README.md"
   lint-dockerfile:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
-    - name: lint
-      uses: luke142367/Docker-Lint-Action@v1.0.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TARGET: Dockerfile
-  lint-yaml:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: yaml-lint
-      uses: ibiqlik/action-yamllint@master
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: lint
+        uses: luke142367/Docker-Lint-Action@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET: Dockerfile
