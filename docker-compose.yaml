@@ -1,11 +1,11 @@
 version: '3.7'
 
-networks:
+networks: {}
 
   # <network name>:
   #   external: false
 
-services:
+services: {}
 
   # <service name>:
   #   build: .
