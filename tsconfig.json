@@ -45,5 +45,12 @@
         // "inlineSources": true,
         // "experimentalDecorators": true,
         // "emitDecoratorMetadata": true,
-    }
+    },
+    "include": [
+        "source/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
