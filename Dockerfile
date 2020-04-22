@@ -1,5 +1,5 @@
 # You must compile the typescript first, using either `npm run build-node`
-# or `npm run build`. Build this file using `docker build -f prod.dockerfile .`.
+# or `npm run build`. Build this file using `docker build .`.
 #
 FROM node:alpine
 LABEL author="Jonathan M. Wilbur <jonathan@wilbur.space>"
