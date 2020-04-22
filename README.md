@@ -8,7 +8,6 @@ Be sure to correct information in:
 
 - `README.md` (This file.)
 - `package.json`
-- `serverless.yml`
 - `webpack.config.js`
 - `Jenkinsfile` (Specifically, the `url` for the Git repository.)
 - `./test/testpage.html`
