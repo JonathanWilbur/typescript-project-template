@@ -313,3 +313,7 @@ rules:
       message: 'Please use Number.isFinite instead.'
     - name: isNaN
       message: 'Please use Number.isNaN instead.'
+  '@typescript-eslint/no-empty-function':
+    - off
+
+  
