@@ -315,5 +315,3 @@ rules:
       message: 'Please use Number.isNaN instead.'
   '@typescript-eslint/no-empty-function':
     - off
-
-  
