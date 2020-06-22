@@ -13,8 +13,12 @@ junit.xml
 *.secretkey
 *.private
 *.secret
+# Bitcoin wallet
 wallet.dat
+# Bitcoin wallet
 default_wallet
+# AWS IAM key downloads
+new_user_credentials.csv
 
 # Sourced from https://github.com/github/gitignore
 
