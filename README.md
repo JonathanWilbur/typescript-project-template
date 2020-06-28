@@ -55,6 +55,8 @@ See the scripts in `package.json` to understand usage.
 - [ ] Add `.npmignore`
 - [ ] Update `.funcignore`
 - [ ] Update `.eslintignore`
+- [ ] Deno compilation?
+- [ ] JSONSchema-to-TypeScript-Interface compiler?
 
 ## Check out these GitHub Actions and Apps
 
