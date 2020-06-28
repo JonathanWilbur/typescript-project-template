@@ -4,6 +4,32 @@
 * Copyright Year: 2020
 * License: [MIT License](https://mit-license.org/)
 
+## Features
+
+- Included NPM Scripts
+  - Line counts with `sloc`
+  - Code formatting with `prettier`
+  - Forcibly install the latest updates with `npm-check-updates`
+- NodeJS and Webpack builds
+- ESLint linting preconfigured
+- Docker and Docker Compose configuration
+- Jenkinsfile
+- VS Code configuration
+  - Debugging
+  - Extension recommendations
+  - Tasks
+- Jest testing
+- GitHub configuration
+  - Workflows / Actions
+  - Issue templates
+  - Pull request templates
+  - Security policy
+  - Support policy
+- `CHANGELOG.md`
+- `CONTRIBUTING.md`
+
+## Usage
+
 Be sure to correct information in:
 
 - `README.md` (This file.)
@@ -13,6 +39,8 @@ Be sure to correct information in:
 - `./test/testpage.html`
 - `Dockerfile`
 - `docker-compose.yaml`
+
+See the scripts in `package.json` to understand usage.
 
 ## To Do
 
