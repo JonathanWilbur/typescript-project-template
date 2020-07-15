@@ -1,6 +1,9 @@
-export default
 function hello (): string {
     return "It worked!";
 }
 
-console.log(hello());
+if (require.main === module) {
+    console.log(hello());
+} else {
+    // This is not the main module.
+}
