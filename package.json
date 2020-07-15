@@ -47,7 +47,7 @@
         "benchmark": "node ./test/benchmark.js",
         "breaking-update": "npx ncu -u && npm install",
         "build": "npx tsc --incremental && npx webpack",
-        "build-node": "npx tsc",
+        "build-node": "npx tsc --incremental",
         "build-web": "npx webpack",
         "clean": "rm -rf dist; mkdir -p dist",
         "line-count": "npx sloc source",
