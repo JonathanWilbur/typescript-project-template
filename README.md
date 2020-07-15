@@ -57,6 +57,7 @@ See the scripts in `package.json` to understand usage.
 - [ ] Update `.eslintignore`
 - [ ] Deno compilation?
 - [ ] JSONSchema-to-TypeScript-Interface compiler?
+- [ ] Add internationalization boilerplate
 
 ## Check out these GitHub Actions and Apps
 
