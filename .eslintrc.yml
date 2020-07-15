@@ -12,10 +12,6 @@ globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
 overrides:
-  - files: "*.js"
-    rules:
-      '@typescript-eslint/no-var-requires':
-        - off
   - files: "*.test.js"
     rules:
       no-undef:
@@ -314,4 +310,6 @@ rules:
     - name: isNaN
       message: 'Please use Number.isNaN instead.'
   '@typescript-eslint/no-empty-function':
+    - off
+  '@typescript-eslint/no-var-requires':
     - off
