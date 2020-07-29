@@ -24,8 +24,8 @@ async function main (): Promise<void> {
 //         pluralSeparator: "#",
 //         contextSeparator: "@",
 //         backend: {
-//             loadPath: path.join(__dirname, "../locales/{{lng}}/{{ns}}.json"),
-//             addPath: path.join(__dirname, "../locales/{{lng}}/{{ns}}.missing.json"),
+//             loadPath: path.join(__dirname, "../locales/{{lng}}/language/{{ns}}.json"),
+//             addPath: path.join(__dirname, "../locales/{{lng}}/language/{{ns}}.missing.json"),
 //         },
 //         initImmediate: false,
 //     }).then(main);
