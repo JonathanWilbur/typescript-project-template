@@ -47,7 +47,8 @@
         // "emitDecoratorMetadata": true,
     },
     "include": [
-        "source/**/*.ts"
+        "source/**/*.ts",
+        "source/**/*.json",
     ],
     "exclude": [
         "node_modules",
