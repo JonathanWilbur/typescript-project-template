@@ -49,12 +49,12 @@ See the scripts in `package.json` to understand usage.
     this, but I am not keen on installing Grunt just for this.
 - [ ] Profiling
 - [x] Benchmarking
-- [ ] Commit Sign-Off
+- [x] Commit Sign-Off
 - [x] ~~GitHub actions to prevent secret commits~~ None adequate.
 - [x] Only install production dependencies in container and in Jenkins jobs
-- [ ] Add `.npmignore`
-- [ ] Update `.funcignore`
-- [ ] Update `.eslintignore`
+- [x] ~~Add `.npmignore`~~
+- [x] ~~Update `.funcignore`~~
+- [x] ~~Update `.eslintignore`~~
 - [ ] Deno compilation?
 - [ ] JSONSchema-to-TypeScript-Interface compiler?
 - [ ] Add internationalization boilerplate
