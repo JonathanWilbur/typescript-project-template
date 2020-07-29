@@ -42,22 +42,42 @@ Be sure to correct information in:
 
 See the scripts in `package.json` to understand usage.
 
+### Recommended Package Inclusions
+
+- [i18next](https://www.npmjs.com/package/i18next) for language internationalization
+- [ono](https://www.npmjs.com/package/ono) for error handling
+- [globalize](https://www.npmjs.com/package/globalize) for currency, units,
+  timezones, date formatting, etc.
+- [json-schema-to-typescript](https://www.npmjs.com/package/json-schema-to-typescript)
+  to compile JSON Schema to TypeScript interfaces
+- [winston](https://www.npmjs.com/package/winston) for logging
+- [moment](https://www.npmjs.com/package/moment) for date and time manipulation
+- [buffer](https://www.npmjs.com/package/buffer) to use `Buffer` in the browser
+- [uuid](https://www.npmjs.com/package/uuid) to generate UUIDs
+- [ajv](https://www.npmjs.com/package/ajv) for JSON schema validation
+- [os-locale](https://www.npmjs.com/package/os-locale) to get the locale from the OS
+- [prettier](https://www.npmjs.com/package/prettier) for code formatting
+
+### Standards to Follow
+
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Semantic Versioning](https://semver.org/) or [Calendar Versioning](https://calver.org/)
+- [No-Color](https://no-color.org/)
+
 ## To Do
 
 - [ ] Complexity Reporting
   - I like [this package](https://www.npmjs.com/package/grunt-complexity) for
     this, but I am not keen on installing Grunt just for this.
 - [ ] Profiling
-- [x] Benchmarking
-- [x] Commit Sign-Off
-- [x] ~~GitHub actions to prevent secret commits~~ None adequate.
-- [x] Only install production dependencies in container and in Jenkins jobs
-- [x] ~~Add `.npmignore`~~
-- [x] ~~Update `.funcignore`~~
-- [x] ~~Update `.eslintignore`~~
 - [ ] Deno compilation?
 - [ ] JSONSchema-to-TypeScript-Interface compiler?
 - [ ] Add internationalization boilerplate
+- [ ] Experiment with [commitizen](https://www.npmjs.com/package/commitizen)
+- [ ] Create a separate schema folder
+- [ ] Configure GPG Commit Signing
+- [ ] Experiment with [release-it](https://www.npmjs.com/package/release-it)
+- [ ] Experiment with the Conventional Commits VS Code Extension
 
 ## Check out these GitHub Actions and Apps
 
