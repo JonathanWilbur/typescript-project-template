@@ -72,9 +72,9 @@ See the scripts in `package.json` to understand usage.
     this, but I am not keen on installing Grunt just for this.
 - [ ] Profiling
 - [ ] Deno compilation?
-- [ ] JSONSchema-to-TypeScript-Interface compiler?
+- [x] JSONSchema-to-TypeScript-Interface compiler?
 - [x] Add internationalization boilerplate
-- [ ] Create a separate schema folder
+- [x] Create a separate schema folder
 - [ ] Configure GPG Commit Signing
 - [ ] Experiment with the Conventional Commits VS Code Extension
 

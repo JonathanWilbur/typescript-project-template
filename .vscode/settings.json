@@ -18,4 +18,5 @@
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.preDeployTask": "npm prune",
     "git.alwaysSignOff": true,
+    "git.enableCommitSigning": true,
 }
