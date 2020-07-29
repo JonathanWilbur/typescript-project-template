@@ -57,6 +57,7 @@ See the scripts in `package.json` to understand usage.
 - [ajv](https://www.npmjs.com/package/ajv) for JSON schema validation
 - [os-locale](https://www.npmjs.com/package/os-locale) to get the locale from the OS
 - [prettier](https://www.npmjs.com/package/prettier) for code formatting
+- [eol](https://www.npmjs.com/package/eol) for line-ending control
 
 ### Standards to Follow
 
@@ -72,11 +73,9 @@ See the scripts in `package.json` to understand usage.
 - [ ] Profiling
 - [ ] Deno compilation?
 - [ ] JSONSchema-to-TypeScript-Interface compiler?
-- [ ] Add internationalization boilerplate
-- [ ] Experiment with [commitizen](https://www.npmjs.com/package/commitizen)
+- [x] Add internationalization boilerplate
 - [ ] Create a separate schema folder
 - [ ] Configure GPG Commit Signing
-- [ ] Experiment with [release-it](https://www.npmjs.com/package/release-it)
 - [ ] Experiment with the Conventional Commits VS Code Extension
 
 ## Check out these GitHub Actions and Apps
