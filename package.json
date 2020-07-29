@@ -37,7 +37,8 @@
         "test": "test"
     },
     "files": [
-        "dist/node/**/*"
+        "dist/node/**/*",
+        "locales/**/*"
     ],
     "keywords": [],
     "license": "MIT",
