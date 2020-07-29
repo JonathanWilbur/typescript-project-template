@@ -58,6 +58,7 @@ See the scripts in `package.json` to understand usage.
 - [os-locale](https://www.npmjs.com/package/os-locale) to get the locale from the OS
 - [prettier](https://www.npmjs.com/package/prettier) for code formatting
 - [eol](https://www.npmjs.com/package/eol) for line-ending control
+- [is-debugging](https://www.npmjs.com/package/is-debugging) to determine if NodeJS is debugging.
 
 ### Standards to Follow
 

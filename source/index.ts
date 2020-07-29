@@ -4,6 +4,7 @@
 // import eol from "eol"
 // import i18n from "i18next";
 // import osLocale from "os-locale";
+// import isDebugging from "is-debugging";
 
 export default
 async function main (): Promise<void> {
