@@ -38,7 +38,8 @@
     },
     "files": [
         "dist/node/**/*",
-        "locales/**/*"
+        "locales/**/*",
+        "schema/**/*"
     ],
     "keywords": [],
     "license": "MIT",
