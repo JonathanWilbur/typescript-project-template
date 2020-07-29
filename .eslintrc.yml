@@ -313,3 +313,6 @@ rules:
     - off
   '@typescript-eslint/no-var-requires':
     - off
+  # Turned off because some parts of the NodeJS library still use `object`, which is banned by default.
+  '@typescript-eslint/ban-types':
+    - off
