@@ -27,6 +27,7 @@
   - Support policy
 - `CHANGELOG.md`
 - `CONTRIBUTING.md`
+- JSDoc generation
 
 ## Usage
 
