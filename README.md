@@ -79,6 +79,9 @@ See the scripts in `package.json` to understand usage.
 - [x] Create a separate schema folder
 - [ ] Configure GPG Commit Signing
 - [ ] Experiment with the Conventional Commits VS Code Extension
+- [ ] Require newlines between function parameters
+  - [This](https://eslint.org/docs/rules/function-paren-newline) applies to arguments as well. No viable option found.
+- [ ] Require newlines after `export`.
 
 ## Check out these GitHub Actions and Apps
 

@@ -19,4 +19,5 @@
     "azureFunctions.preDeployTask": "npm prune",
     "git.alwaysSignOff": true,
     "git.enableCommitSigning": true,
+    "typescript.preferences.quoteStyle": "double"
 }

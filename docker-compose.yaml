@@ -5,15 +5,25 @@ networks: {}
   # <network name>:
   #   external: false
 
-services: {}
+services:
 
-  # <service name>:
-  #   build: .
-  #   container_name: ''
-  #   depends_on: []
-  #   environment: []
-  #   hostname: ''
-  #   image: ''
-  #   networks: []
-  #   ports: []
-  #   volumes: []
+  CHANGE-ME:
+    working_dir: /srv
+    build: .
+    container_name: ''
+    depends_on: []
+    environment:
+      # https://www.gnu.org/software/libc/manual/html_node/Locale-Categories.html#Locale-Categories
+      # LC_COLLATE: ""
+      # LC_CTYPE: ""
+      # LC_MONETARY: ""
+      # LC_NUMERIC: ""
+      # LC_TIME: ""
+      LC_MESSAGES: en_US.utf8
+      LC_ALL: en_US.utf8
+      LANG: en_US.utf8
+    hostname: ''
+    image: 'node:alpine'
+    networks: []
+    ports: []
+    volumes: []
