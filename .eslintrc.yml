@@ -24,6 +24,7 @@ parserOptions:
   #   - './tsconfig.json'
 plugins:
   - '@typescript-eslint'
+  - 'unused-imports'
 rules:
   indent:
     - error
@@ -135,10 +136,15 @@ rules:
     - off
   no-label-var:
     - warn
+  # At least for now, this is causing specious errors with enums.
   no-shadow:
-    - error
+    - off
+  # See above.
+  '@typescript-eslint/no-shadow':
+    - off
+  # Downgraded to "warn" because there are circumstances where this is used normally.
   no-use-before-define:
-    - error
+    - warn
   handle-callback-err:
     - warn
   no-buffer-constructor:
@@ -224,7 +230,8 @@ rules:
     - error
   brace-style:
     - error
-    - 1tbs
+    - allman
+    - allowSingleLine: true
   comma-dangle:
     - error
     - always-multiline
@@ -315,4 +322,6 @@ rules:
     - off
   # Turned off because some parts of the NodeJS library still use `object`, which is banned by default.
   '@typescript-eslint/ban-types':
+    - off
+  '@typescript-eslint/no-non-null-assertion':
     - off
